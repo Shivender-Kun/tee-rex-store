@@ -1,0 +1,14 @@
+.page__404 {
+  text-align: center;
+  padding: 3rem;
+  flex: 1;
+
+  &--heading {
+    color: red;
+    margin: 0 auto 3rem;
+  }
+
+  &--return-home {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#app__container {
+  flex-direction: column;
+  font-size: 1.5rem;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#content__container {
+  flex: 1;
+}
+
+.active {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}

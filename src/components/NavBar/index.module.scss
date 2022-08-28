@@ -1,0 +1,15 @@
+.page__nav {
+  &--link {
+    background-color: rgb(226 226 226);
+    color: black;
+    box-shadow: 2px 2px 3px #000000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+    border-radius: 5px;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
