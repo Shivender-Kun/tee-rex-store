@@ -1,0 +1,87 @@
+@import "./configs/index";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-popins;
+  font-size: 1.5rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.active {
+  background-color: rgb(66, 66, 66);
+  color: white;
+
+  img {
+    filter: invert(1);
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+#app__container {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+@media (max-width: 1450px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1035px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 855px) {
+  html {
+    font-size: 13px;
+  }
+
+  #page__header {
+    padding: 1rem;
+  }
+
+  #home__page {
+    padding: 2rem 0.75rem;
+    gap: 2rem;
+    grid-template-areas:
+      "search search search"
+      "products products products"
+      "products products products"
+      "products products products";
+  }
+
+  #filter__side {
+    display: none;
+  }
+
+  #products__container {
+    height: 95%;
+  }
+}

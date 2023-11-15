@@ -32,7 +32,7 @@ module.exports = (env) => {
       },
     },
 
-    devtool: "source-map",
+    devtool: "inline-source-map",
 
     devServer: {
       static: {
@@ -42,6 +42,7 @@ module.exports = (env) => {
       compress: true,
       port: 3000,
       hot: true,
+      open: true,
     },
 
     resolve: { extensions: [".js", ".jsx", ".css", ".scss"] },
@@ -100,6 +101,11 @@ module.exports = (env) => {
       ],
     },
 
-    plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: "./public/index.html",
+        favicon: "./public/favicon.png",
+      }),
+    ],
   };
 };

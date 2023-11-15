@@ -1,9 +1,18 @@
 import axios from "axios";
-import APP_ROUTES from "../constants";
+import API from "../constants";
 
-export const fetchList =
-  (endpoint = APP_ROUTES.PRODUCTS_LIST) =>
-  (dispatch) =>
-    axios
-      .get(endpoint)
-      .then((response) => dispatch({ type: endpoint, payload: response.data }));
+const useFetchProducts =
+  (endpoint = API.PRODUCTS_LIST) =>
+  async (dispatch) => {
+    try {
+      const response = await axios.get(endpoint);
+
+      if (response.status === 200)
+        dispatch({ type: endpoint, payload: response.data });
+      else throw new Error(response);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+export default useFetchProducts;

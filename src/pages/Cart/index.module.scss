@@ -1,0 +1,9 @@
+.cart__items--container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin: 2rem 5rem;
+  padding: 5px;
+  overflow: auto;
+}

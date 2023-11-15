@@ -1,0 +1,15 @@
+.home__page {
+  flex: 1;
+  overflow: auto;
+  font-size: 1.1rem;
+  padding: 2rem 3.5rem;
+
+  display: grid;
+  gap: 10% 2rem;
+
+  grid-template-areas:
+    "empty search search"
+    "filters products products"
+    "filters products products"
+    "filters products products";
+}

@@ -1,0 +1,27 @@
+@import "../../../styles/configs/colors";
+
+.search__ {
+  &wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    height: 3rem;
+
+    grid-area: search;
+  }
+
+  &input-wrapper {
+    border-bottom: 2px solid;
+    min-width: 25rem;
+    max-width: 70%;
+    height: 100%;
+
+    #search-input {
+      padding: 0.25rem 0.5rem;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
+  }
+}

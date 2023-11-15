@@ -1,0 +1,28 @@
+.page__ {
+  &container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    flex: 1;
+    padding: 2.5% 0;
+    overflow: auto;
+
+    > div {
+      width: 80%;
+    }
+  }
+
+  &top {
+    .heading {
+      font-size: 2rem;
+    }
+  }
+
+  &bottom {
+    flex: 1;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+  }
+}

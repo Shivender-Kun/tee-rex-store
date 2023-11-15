@@ -1,0 +1,30 @@
+.filter__ {
+  &container {
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    border: 1px solid #fafafa;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px 3px #8f8f8f4f;
+    height: fit-content;
+    max-height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    min-width: fit-content;
+
+    grid-area: filters;
+  }
+
+  &type {
+    padding: 0.5rem 0;
+  }
+
+  &name {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  &input {
+    margin: 6px;
+  }
+}

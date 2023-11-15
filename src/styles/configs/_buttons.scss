@@ -1,0 +1,29 @@
+@mixin button {
+  background-color: black;
+  border-radius: 5px;
+  height: 95%;
+  color: white;
+}
+
+.btn {
+  &__ {
+    &add-to-cart {
+      @include button();
+      width: 45%;
+    }
+
+    &increase-quantity,
+    &decrease-quantity {
+      @include button();
+      width: 1.5rem;
+    }
+
+    &search {
+      background-color: $gray-800;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      min-width: 4rem;
+    }
+  }
+}
